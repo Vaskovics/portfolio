@@ -1,25 +1,21 @@
-import HeroSection from "../HeroSection";
-
-import React from 'react'
-import MySkils from "../MySkils";
 import AboutMe from "../AboutMe";
-import MyPortfolio from "../MyPortfolio";
-import Testimonials from "../Testimonials";
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
+import HeroSection from "../HeroSection";
+import MyPortfolio from "../MyPortfolio";
+import MySkills from "../MySkills";
+import Testimonial from "../Testimonials";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <HeroSection />
-      <MySkils />
+      <MySkills />
       <AboutMe />
       <MyPortfolio />
-      <Testimonials />
+      <Testimonial />
       <ContactMe />
       <Footer />
     </>
-  )
+  );
 }
-
-export default Home
