@@ -1,6 +1,9 @@
 import data from "../../data/index.json";
 
 export default function MyPortfolio() {
+  const handleGitHubBtn = () => {
+    window.open('https://github.com/Vaskovics/', '_blank');
+  }
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
@@ -9,7 +12,7 @@ export default function MyPortfolio() {
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         <div>
-          <button className="btn btn-github">
+          <button className="btn btn-github" onClick={handleGitHubBtn}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -28,35 +31,47 @@ export default function MyPortfolio() {
           </button>
         </div>
       </div>
+      
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
-            </div>
+            <a href={item.site} target="_blank">
+              <div className="portfolio--section--img">
+                <img src={item.src} alt="Placeholder" />
+              </div>
+            </a>
+
             <div className="portfolio--section--card--content">
               <div>
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
-                <svg
+
+              <a href={item.link} target="_blank" className="portfolio--link">
+                <p className="text-sm">
+                  
+                  <svg
+                  style={{ paddingRight: '8px' }}
+                  height="1.5rem"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="github"
+                  class="svg-inline--fa fa-github fa-w-16"
+                  role="img"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
+                  viewBox="0 0 496 512"
                 >
                   <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                    fill="currentColor"
+                    d="M245.6 9.9C109.9 9.9 0 119.4 0 255.2c0 112.7 73.1 208.3 174.7 242.6 12.8 2.4 17.5-5.6 17.5-12.3 0-6.1-.2-26.4-.3-47.9-71.1 15.5-86.2-34.3-86.2-34.3-11.6-29.4-28.3-37.2-28.3-37.2-23.2-15.9 1.8-15.6 1.8-15.6 25.6 1.8 39.1 26.3 39.1 26.3 22.8 39.1 59.8 27.8 74.4 21.2 2.3-16.5 8.9-27.8 16.2-34.2-56.5-6.4-116.2-28.2-116.2-125.2 0-27.7 9.9-50.4 26.2-68.2-2.6-6.4-11.4-32.3 2.5-67.4 0 0 21.5-6.9 70.4 26.1 20.4-5.7 42.3-8.5 64-8.6 21.7.1 43.6 2.9 64 8.6 48.9-33 70.3-26.1 70.3-26.1 14 35.1 5.2 61 2.6 67.4 16.4 17.8 26.1 40.5 26.1 68.2 0 97.2-59.8 118.7-116.6 125 9.2 7.8 17.4 23.3 17.4 47 0 34 0 61.4 0 69.8 0 6.8 4.6 14.8 17.6 12.2C422.9 463.4 496 367.8 496 255.2c0-135.8-109.9-245.3-245.6-245.3"
+                  ></path>
+                  
                 </svg>
+                View on GitHub:  
               </p>
+              </a>
+
             </div>
           </div>
         ))}

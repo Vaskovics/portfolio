@@ -1,4 +1,7 @@
 export default function HeroSection() {
+  const handleGetInTouch = () => {
+    window.location.href = 'mailto:v.vaskovics@gmail.com'
+  }
   return (
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
@@ -15,7 +18,7 @@ export default function HeroSection() {
             <br /> in crafting responsive and dynamic web applications.
           </p>
         </div>
-        <button className="btn btn-primary">Get In Touch</button>
+        <button onClick={handleGetInTouch} className="btn btn-primary">Get In Touch</button>
       </div>
       <div className="hero--section--img">
         <img src="./img/hero_img.png" alt="Hero Section" />

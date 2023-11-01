@@ -29,23 +29,26 @@
     {
       "id": "1",
       "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Mortgage calculator",
+      "description": "Technologies used: React.js, Material-UI, React Hooks, Chart.js, CSS.",
+      "link": "https://github.com/Vaskovics/mortgage_calculator",
+      "site": "https://vaskovics.github.io/mortgage_calculator/"
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "ToDo App",
+      "description": "Technologies used: React, TypeScript, HTML/CSS, Fetch API.",
+      "link": "https://github.com/Vaskovics/Todo-App",
+      "site": "https://vaskovics.github.io/Todo-App/"
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "title": "Employee table",
+      "description": "Technologies used: JavaScript, HTML5, CSS3, DOM.",
+      "link": "https://github.com/Vaskovics/Employees-table-DOM",
+      "site": "https://vaskovics.github.io/mortgage_calculator/"
     }
   ],
   "testimonial": [
@@ -53,25 +56,25 @@
       "id": "1",
       "count": "5",
       "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
+      "description": "Technologies used: React.js, Material-UI, React Hooks, Chart.js, CSS.",
+      "link": "https://github.com/Vaskovics/mortgage_calculator",
+      "site": "https://vaskovics.github.io/mortgage_calculator/"
     },
     {
       "id": "2",
       "count": "5",
       "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
+      "description": "Technologies used: React.js, Material-UI, React Hooks, Chart.js, CSS.",
+      "link": "https://github.com/Vaskovics/mortgage_calculator",
+      "site": "https://github.com/Vaskovics/mortgage_calculator"
     },
     {
       "id": "3",
       "count": "5",
       "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
+      "description": "Technologies used: React.js, Material-UI, React Hooks, Chart.js, CSS.",
+      "link": "https://github.com/Vaskovics/Employees-table-DOM",
+      "site": "https://vaskovics.github.io/Employees-table-DOM/"
     }
   ]
 }
